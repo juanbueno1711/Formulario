@@ -13,11 +13,14 @@
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" type="text/css" href="static/css/jquery-ui.structure.min.css"></script>
   <script type="text/javascript">
-    var elem = document.querySelector('select');
-    var instance = M.FormSelect.init(elem, options);
-    $(document).ready(function(){
-      $('select').formSelect();
-    });
+  // var elem = document.querySelector('select');
+  // var instance = M.FormSelect.init(elem, options);
+  // $(document).ready(function(){
+  //   $('select').formSelect();
+  // });
+  $(document).ready(function() {
+    $('select').material_select();
+  });
   </script>
   <title>Pruebas</title>
 </head>
@@ -45,7 +48,7 @@
               <div class="row">
                 <div class="col s6"><h6><b>Hora de Ingreso</b></h6></div>
                 <div class="col s3"><h6><b>Acumulado</b></h6></div>
-                <div class="col s3"><h6><b>Procesadndo</b></h6></div>
+                <div class="col s3"><h6><b>Procesado</b></h6></div>
                 <div class="col s6"><h6>22/01/2018 19:37:09</h6></div>
                 <div class="col s3"><h6>0:00:00:39</h6></div>
                 <div class="col s3"><h6>0:00:00:35</h6></div>
@@ -68,18 +71,57 @@
       </div>
     </div>
     <div class="row">
-      <div class="input-field col s12">
+
+      <div class="input-field col s6">
         <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
-        <label for="textarea2">Textarea</label>
+        <label for="textarea2">Ingrese Nuevo Comentario</label>
       </div>
-      <div class="input-field col s12">
+      <div class="input-field col s6">
         <select>
-          <option value="" disabled selected>Choose your option</option>
+          <option value="" disabled selected>Seleccione tipo de alarma</option>
           <option value="1">Option 1</option>
           <option value="2">Option 2</option>
           <option value="3">Option 3</option>
         </select>
-        <label>Materialize Select</label>
+        <label>Predefinidas</label>
+      </div>
+      <div class="input-field col s6">
+        <select>
+          <option value="" disabled selected>Seleccione su Categoria</option>
+          <option value="1">Alarma Real</option>
+          <option value="2">Alerta Silenciosa 24 Horas</option>
+          <option value="3">Auto Monitoreo</option>
+          <option value="4">Falsa Alarma - Causas por Determinar</option>
+          <option value="5">Falsa Alarma - Factor Externo</option>
+          <option value="6">Falsa Alarma - Factor Humano</option>
+          <option value="7">Falsa Alarma - Factor Técnico</option>
+          <option value="8">Prueba de reacción del personal</option>
+          <option value="9">Reporte Autoridad Auto Procesado</option>
+          <option value="10">Servicio Técnico Finalizado</option>
+          <option value="11">Sistema en modo de Prueba</option>
+          <option value="12">Sistema en modo Desactivado</option>
+          <option value="13">Solicitud de Apertura</option>
+        </select>
+        <label>Categorización</label>
+      </div>
+      <div class="input-field col s6">
+        <select>
+          <option value="" disabled selected>Seleccione su Opción</option>
+          <option value="1">Cancelado por el usuario</option>
+          <option value="2">Conformidad del Servicio Técnico</option>
+          <option value="3">Contacto con el Agente de Prevención</option>
+          <option value="4">Contacto con el Programador de Turno</option>
+          <option value="5">Cuenta en modo Prueba</option>
+          <option value="6">Detalle en las Observaviones</option>
+          <option value="7">Monitoreo por CCTV</option>
+          <option value="8">Se informa al supervisor de Seguridad Interna</option>
+          <option value="9">Se notifica al ACUDA</option>
+          <option value="10">Se notifica al Gerente de la Sucursal</option>
+          <option value="11">Se notifica al responsable de la MAG</option>
+          <option value="12">Sin Respuesta: Se deja mensaje de voz</option>
+          <option value="13">Solicitud de Apertuda Atendida</option>
+        </select>
+        <label>Resolución</label>
       </div>
 
     </div>
