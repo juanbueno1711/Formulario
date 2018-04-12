@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript" src="static/js/jquery-3.3.1.js"></script>
+  <script type="text/javascript" src="static/js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="static/js/angular.min.js"></script>
+  <script type="text/javascript" src="static/js/angular-animate.min.js"></script>
+  <script type="text/javascript" src="static/js/angular-aria.min.js"></script>
+  <script type="text/javascript" src="static/js/materialize.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="static/css/materialize.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" type="text/css" href="static/css/jquery-ui.structure.min.css"></script>
+  <script type="text/javascript">
+    var elem = document.querySelector('select');
+    var instance = M.FormSelect.init(elem, options);
+    $(document).ready(function(){
+      $('select').formSelect();
+    });
+  </script>
+  <title>Pruebas</title>
+</head>
+<body>
+  <div ng-controller="tarjetas">
+    <div class="row">
+      <div class="col s12">
+        <div class="card-panel #ffebee red lighten-5"> <h4 class="center-align" class="header"><b>BUR - Robo</b></h4></div>
+        <div class="card horizontal #ffebee red lighten-5">
+          <div class="card-image">
+            <img src="http://leonescomercio.com/wp-content/uploads/2016/11/Estamos-abiertos.jpg">
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <div class="row">
+                <div class="col s12"><h5><b>Prosegur LIMA</b></h5></div>
+                <div class="col s12"><h5><b>LIM-0110 PLAMNTA LIMA / En Partición: LIM-0113 ZAS - Tesoreria</b></h5></div>
+              </div>
+              <div class="row">
+                <div class="col s3"><h6><b>Dirección:</b></h6></div>
+                <div class="col s9"><h6>Cusco I - Calle los alisos 1524</h6></div>
+                <div class="col s3"><h6><b>Localidad:</b></h6></div>
+                <div class="col s9"><h6>Cusco I</h6></div>
+              </div>
+              <div class="row">
+                <div class="col s6"><h6><b>Hora de Ingreso</b></h6></div>
+                <div class="col s3"><h6><b>Acumulado</b></h6></div>
+                <div class="col s3"><h6><b>Procesadndo</b></h6></div>
+                <div class="col s6"><h6>22/01/2018 19:37:09</h6></div>
+                <div class="col s3"><h6>0:00:00:39</h6></div>
+                <div class="col s3"><h6>0:00:00:35</h6></div>
+              </div>
+              <div class="row">
+                <div class="col s4"><h6><b>Usuario Zona</b></h6></div>
+                <div class="col s4"><h6><b>Origen</b></h6></div>
+                <div class="col s4"><h6><b>Prioridad Linea de Tarjeta</b></h6></div>
+                <div class="col s4"><h6>(21) Supervision Sirena Anulada</h6></div>
+                <div class="col s4"><h6>PG : SURGARD-SERIAL 1</h6></div>
+                <div class="col s4"><h6></h6></div>
+              </div>
+            </div>
+            <div class="card-action">
+              <a href="#">Anterior</a>
+              <a href="#">Siguiente</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
+        <label for="textarea2">Textarea</label>
+      </div>
+      <div class="input-field col s12">
+        <select>
+          <option value="" disabled selected>Choose your option</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+        </select>
+        <label>Materialize Select</label>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
